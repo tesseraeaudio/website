@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+<!-- Symbole -->
+<g fill="none" stroke="#e0a458" stroke-width="12"
+   stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Contour -->
+  <path d="M627 267 L832 386 L832 604 L627 723 L422 604 L422 386 Z"/>
+
+  <!-- Axe vertical complet -->
+  <path d="M627 267 L627 723"/>
+
+  <!-- Partie haute -->
+  <path d="M525 326 L627 385 L729 326"/>
+  <path d="M525 326 L525 435"/>
+  <path d="M729 326 L729 435"/>
+
+  <!-- Losanges centraux -->
+  <path d="M422 495 L525 435 L627 495 L525 554 L422 495"/>
+  <path d="M627 495 L729 435 L832 495 L729 554 L627 495"/>
+
+  <!-- Cubes bas gauche / droite -->
+  <path d="M525 554 L525 663"/>
+  <path d="M729 554 L729 663"/>
+
+  <!-- Losange inférieur -->
+  <path d="M525 663 L627 604 L729 663"/>
+</g>
+
+<!-- Wordmark conservé en texte vectoriel net -->
+<g fill="#e0a458" text-anchor="middle"
+   font-family="Arial, Helvetica, sans-serif">
+  <text x="627" y="870" font-size="92" font-weight="700" letter-spacing="30">TESSERAE</text>
+  <text x="627" y="970" font-size="52" font-weight="400" letter-spacing="34">AUDIO</text>
+</g>
+</svg>
