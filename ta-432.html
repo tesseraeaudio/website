@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AQ-1 - Parametric Equalizer VST3 | Tesserae Audio</title>
-<meta name="description" content="AQ-1: a free multi-band parametric equalizer for VST3. 8 bands, every filter type, Linear Phase, Mid/Side, dynamic EQ, Auto Gain, EQ Match.">
+<title>TA-432 - Pitch Converter VST3 (440 to 432 Hz) | Tesserae Audio</title>
+<meta name="description" content="TA-432: a free 440 to 432 Hz (or custom ratio) real-time pitch converter for VST3. Formant preservation, transient-aware crossfade, Quality/Reactive modes, Auto Gain.">
 <link rel="icon" type="image/svg+xml" href="assets/logo/tesserae-icon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,8 +18,8 @@
     </a>
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="aq-1.html" class="is-active">AQ-1</a>
-      <a href="ta-432.html">TA-432</a>
+      <a href="aq-1.html">AQ-1</a>
+      <a href="ta-432.html" class="is-active">TA-432</a>
       <a href="about.html">About</a>
     </nav>
     <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -30,14 +30,14 @@
 
   <section class="hero">
     <div class="container">
-      <span class="eyebrow">Parametric Equalizer VST3</span>
-      <h1>AQ-1</h1>
+      <span class="eyebrow">Pitch Converter VST3</span>
+      <h1>TA-432</h1>
       <p class="hero-lede">
-        A complete multi-band equalizer, built for real use in mixing and mastering.
-        Free, no account, no license.
+        Convert your master bus from 440 Hz to 432 Hz - or any custom reference -
+        in real time, transparently. Free, no account, no license.
       </p>
       <div class="hero-actions">
-        <a href="https://github.com/tesseraeaudio/aq-1-releases/releases/download/v1.0.0/AQ-1_Setup.exe" class="btn btn-primary">Download for free</a>
+        <a href="https://github.com/tesseraeaudio/ta-432-releases/releases/download/v1.0.0/TA-432_Setup.exe" class="btn btn-primary">Download for free</a>
       </div>
     </div>
   </section>
@@ -45,7 +45,7 @@
   <section class="product-screenshot">
     <div class="container">
       <figure>
-        <img src="assets/img/aq1-screenshot.png" alt="AQ-1 plugin interface: interactive equalizer curve with 8 bands, spectrum analyzer, Freq/Gain/Q controls per band">
+        <img src="assets/img/ta432-screenshot.png" alt="TA-432 plugin interface: Source/Ratio/Target panels, Formant/Transients/Mix controls, Quality/Reactive mode, output meter">
       </figure>
     </div>
   </section>
@@ -54,81 +54,57 @@
     <div class="container">
       <div class="section-heading">
         <span class="eyebrow">Features</span>
-        <h2 class="nowrap">Everything you need, nothing you don't</h2>
-        <p>A solid foundation (filtering, interactive curve, spectral analysis) plus advanced tools when you need them.</p>
+        <h2 class="nowrap">Built for transparency, not creative pitch-shifting</h2>
+        <p>A tiny, precise ratio shift (432/440 is about a third of a semitone) deserves a tool designed for that, not a general-purpose harmonizer.</p>
       </div>
       <div class="feature-grid">
 
         <div class="feature-card">
           <span class="feature-index">1</span>
-          <h3>8 bands</h3>
-          <p>Eight independent bands, each with its own filter type, toggled on or off on the fly.</p>
+          <h3>432 Hz &amp; 528 Hz presets</h3>
+          <p>One click for the two most requested reference pitches, or dial in any custom target manually.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">2</span>
-          <h3>Every filter type</h3>
-          <p>Bell, Low Shelf, High Shelf, Low Cut, High Cut, Notch, Band Pass - the full vocabulary of a pro EQ.</p>
+          <h3>Manual source correction</h3>
+          <p>Assumes 440 Hz by default, but lets you correct the source pitch if your track isn't quite there.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">3</span>
-          <h3>Adjustable slopes</h3>
-          <p>From 6 to 48 dB/octave on cuts, for filtering as gentle or as steep as you need.</p>
+          <h3>Formant preservation</h3>
+          <p>Keeps voices and instruments sounding natural instead of chipmunked, even at the smallest ratios.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">4</span>
-          <h3>Mid/Side, Left/Right</h3>
-          <p>Each band can target Stereo, Mid, Side, Left, or Right independently of the others.</p>
+          <h3>Transient preservation</h3>
+          <p>A simple onset detector blends back toward the original signal on percussive hits, avoiding the smear phase-vocoders are known for.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">5</span>
-          <h3>Linear Phase mode</h3>
-          <p>Linear-phase processing for when phase purity matters more than latency.</p>
+          <h3>Quality / Reactive modes</h3>
+          <p>High Quality for mixing and mastering, Reactive for a much shorter, monitoring-friendly latency.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">6</span>
-          <h3>Spectrum analyzer</h3>
-          <p>Real-time pre/post visualization, overlaid directly on the response curve.</p>
+          <h3>Auto Gain</h3>
+          <p>Measures dry vs. wet level in real time and compensates automatically, so the conversion never sneaks in a level change.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">7</span>
-          <h3>Dynamic EQ + sidechain</h3>
-          <p>Threshold, ratio, attack/release per band. External trigger for targeted de-essing or resonance control.</p>
+          <h3>Dry/Wet mix</h3>
+          <p>Blend or A/B against the original signal without leaving the plugin.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">8</span>
-          <h3>Auto Gain</h3>
-          <p>Automatic level compensation after EQ, based on the shape of the curve.</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">9</span>
-          <h3>EQ Match</h3>
-          <p>Capture your signal's spectrum, load a reference, and let AQ-1 match the tone.</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">10</span>
-          <h3>Interactive curve</h3>
-          <p>Create, move, and edit each band directly on the curve: frequency, gain, Q, filter type.</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">11</span>
-          <h3>Presets</h3>
-          <p>Save and reload your settings, compare two versions in one click (A/B).</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">12</span>
-          <h3>Undo/redo</h3>
-          <p>Undo or redo your settings without leaving the plugin, just like your DAW.</p>
+          <h3>PDC-correct bypass</h3>
+          <p>Bypassing TA-432 never desyncs your session - latency compensation stays correct whether it's on or off.</p>
         </div>
 
       </div>
@@ -164,9 +140,9 @@
 
   <section class="download-cta" id="download">
     <div class="container">
-      <h2>Ready to try AQ-1?</h2>
+      <h2>Ready to try TA-432?</h2>
       <p>Free, no account, no time limit.</p>
-      <a href="https://github.com/tesseraeaudio/aq-1-releases/releases/download/v1.0.0/AQ-1_Setup.exe" class="btn btn-primary">Download AQ-1 (VST3, Windows)</a>
+      <a href="https://github.com/tesseraeaudio/ta-432-releases/releases/download/v1.0.0/TA-432_Setup.exe" class="btn btn-primary">Download TA-432 (VST3, Windows)</a>
       <span class="free-badge">100% free</span>
     </div>
   </section>
@@ -181,7 +157,7 @@
     </div>
     <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="ta-432.html">TA-432</a></li>
+      <li><a href="aq-1.html">AQ-1</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </div>
