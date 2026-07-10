@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AQ-1 - Parametric Equalizer VST3 | Tesserae Audio</title>
-<meta name="description" content="AQ-1: a free multi-band parametric equalizer for VST3. 8 bands, every filter type, Linear Phase, Mid/Side, dynamic EQ, Auto Gain, EQ Match.">
+<title>TA-LFO - Tempo-Synced Modulation LFO VST3 | Tesserae Audio</title>
+<meta name="description" content="TA-LFO: a free tempo-synced modulation LFO for VST3. Draw your own curve, route it to volume, pan, and filter cutoff, retrigger on sidechain or MIDI.">
 <link rel="icon" type="image/svg+xml" href="assets/logo/tesserae-icon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,9 +18,9 @@
     </a>
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="aq-1.html" class="is-active">AQ-1</a>
+      <a href="aq-1.html">AQ-1</a>
       <a href="ta-432.html">TA-432</a>
-      <a href="ta-lfo.html">TA-LFO</a>
+      <a href="ta-lfo.html" class="is-active">TA-LFO</a>
       <a href="about.html">About</a>
     </nav>
     <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -31,14 +31,14 @@
 
   <section class="hero">
     <div class="container">
-      <span class="eyebrow">Parametric Equalizer VST3</span>
-      <h1>AQ-1</h1>
+      <span class="eyebrow">Modulation LFO VST3</span>
+      <h1>TA-LFO</h1>
       <p class="hero-lede">
-        A complete multi-band equalizer, built for real use in mixing and mastering.
-        Free, no account, no license.
+        A single modulation curve, drawn by hand, driving volume, pan, and filter cutoff -
+        synced to your tempo or running free. Free, no account, no license.
       </p>
       <div class="hero-actions">
-        <a href="https://github.com/tesseraeaudio/aq-1-releases/releases/download/v1.0.0/AQ-1_Setup.exe" class="btn btn-primary">Download for free</a>
+        <a href="https://github.com/tesseraeaudio/ta-lfo-releases/releases/latest/download/TA-LFO_Setup.exe" class="btn btn-primary">Download for free</a>
       </div>
     </div>
   </section>
@@ -46,7 +46,7 @@
   <section class="product-screenshot">
     <div class="container">
       <figure>
-        <img src="assets/img/aq1-screenshot.png" alt="AQ-1 plugin interface: interactive equalizer curve with 8 bands, spectrum analyzer, Freq/Gain/Q controls per band">
+        <img src="assets/img/ta-lfo-screenshot.png" alt="TA-LFO plugin interface: modulation curve editor with draggable points, Volume/Pan/Filter routing panel, sync and retrigger controls">
       </figure>
     </div>
   </section>
@@ -55,81 +55,51 @@
     <div class="container">
       <div class="section-heading">
         <span class="eyebrow">Features</span>
-        <h2 class="nowrap">Everything you need, nothing you don't</h2>
-        <p>A solid foundation (filtering, interactive curve, spectral analysis) plus advanced tools when you need them.</p>
+        <h2 class="nowrap">One curve, three destinations</h2>
+        <p>Draw the shape once, then decide what it moves - and how it gets triggered.</p>
       </div>
       <div class="feature-grid">
 
         <div class="feature-card">
           <span class="feature-index">1</span>
-          <h3>8 bands</h3>
-          <p>Eight independent bands, each with its own filter type, toggled on or off on the fly.</p>
+          <h3>Custom curve editor</h3>
+          <p>Add, move, and delete points directly on the curve. Each segment has its own shape: Linear, Exponential, S-Curve, or Hold.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">2</span>
-          <h3>Every filter type</h3>
-          <p>Bell, Low Shelf, High Shelf, Low Cut, High Cut, Notch, Band Pass - the full vocabulary of a pro EQ.</p>
+          <h3>Tempo sync</h3>
+          <p>21 rhythmic divisions from 1/1 to 1/64, including dotted and triplet - or run free at any rate from 0.01 to 20 Hz.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">3</span>
-          <h3>Adjustable slopes</h3>
-          <p>From 6 to 48 dB/octave on cuts, for filtering as gentle or as steep as you need.</p>
+          <h3>Three modulation targets</h3>
+          <p>Volume, pan, and filter cutoff, each with its own depth and invert - route the same curve to one destination or all three at once.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">4</span>
-          <h3>Mid/Side, Left/Right</h3>
-          <p>Each band can target Stereo, Mid, Side, Left, or Right independently of the others.</p>
+          <h3>Sidechain retrigger</h3>
+          <p>Reset the cycle on an incoming transient from a dedicated sidechain input - classic pumping and ducking, driven by your own curve.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">5</span>
-          <h3>Linear Phase mode</h3>
-          <p>Linear-phase processing for when phase purity matters more than latency.</p>
+          <h3>MIDI retrigger</h3>
+          <p>Or reset on note-on, for modulation that stays locked to what you're playing.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">6</span>
-          <h3>Spectrum analyzer</h3>
-          <p>Real-time pre/post visualization, overlaid directly on the response curve.</p>
+          <h3>Grid snapping</h3>
+          <p>Curve points snap to the active tempo division by default - hold Ctrl to place them freely.</p>
         </div>
 
         <div class="feature-card">
           <span class="feature-index">7</span>
-          <h3>Dynamic EQ + sidechain</h3>
-          <p>Threshold, ratio, attack/release per band. External trigger for targeted de-essing or resonance control.</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">8</span>
-          <h3>Auto Gain</h3>
-          <p>Automatic level compensation after EQ, based on the shape of the curve.</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">9</span>
-          <h3>EQ Match</h3>
-          <p>Capture your signal's spectrum, load a reference, and let AQ-1 match the tone.</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">10</span>
-          <h3>Interactive curve</h3>
-          <p>Create, move, and edit each band directly on the curve: frequency, gain, Q, filter type.</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">11</span>
-          <h3>Presets</h3>
-          <p>Save and reload your settings, compare two versions in one click (A/B).</p>
-        </div>
-
-        <div class="feature-card">
-          <span class="feature-index">12</span>
-          <h3>Undo/redo</h3>
-          <p>Undo or redo your settings without leaving the plugin, just like your DAW.</p>
+          <h3>Real-time playhead</h3>
+          <p>Watch the cycle move across the curve as it plays, right where you're editing it.</p>
         </div>
 
       </div>
@@ -165,9 +135,9 @@
 
   <section class="download-cta" id="download">
     <div class="container">
-      <h2>Ready to try AQ-1?</h2>
+      <h2>Ready to try TA-LFO?</h2>
       <p>Free, no account, no time limit.</p>
-      <a href="https://github.com/tesseraeaudio/aq-1-releases/releases/download/v1.0.0/AQ-1_Setup.exe" class="btn btn-primary">Download AQ-1 (VST3, Windows)</a>
+      <a href="https://github.com/tesseraeaudio/ta-lfo-releases/releases/latest/download/TA-LFO_Setup.exe" class="btn btn-primary">Download TA-LFO (VST3, Windows)</a>
       <span class="free-badge">100% free</span>
     </div>
   </section>
@@ -182,8 +152,8 @@
     </div>
     <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
+      <li><a href="aq-1.html">AQ-1</a></li>
       <li><a href="ta-432.html">TA-432</a></li>
-      <li><a href="ta-lfo.html">TA-LFO</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="legal.html">Legal</a></li>
     </ul>
